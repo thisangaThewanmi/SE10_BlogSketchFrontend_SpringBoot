@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index html</title>
+
+    <!--linking the css sheet-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--linking the css in boostrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+ <main>
+
+     <nav id="nav" class="navbar navbar-expand-lg bg-dark navbar-dark"><!--metana me bg-dark eken background colour eka dark = bliack acc to bootstrap colours-->
+         <div class="container-fluid">
+             <a class="navbar-brand" href="#">Navbar</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="#">Home</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Link</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                             Dropdown
+                         </a>
+                         <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="#">Action</a></li>
+                             <li><a class="dropdown-item" href="#">Another action</a></li>
+                             <li><hr class="dropdown-divider"></li>
+                             <li><a class="dropdown-item" href="#">Something else here</a></li>
+                         </ul>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                     </li>
+                 </ul>
+
+             </div>
+         </div>
+     </nav>
+
+
+     <section id="sec1" class="container mt-5"> <!--mt-5 eken ida tino udai yatai-->
+         <div class="mb-3">
+             <label for="postId" class="form-label">Post Id</label>
+             <input type="email" class="form-control" id="postId" placeholder="name@example.com">
+         </div>
+
+         <div class="mb-3">
+             <label for="postTitle" class="form-label">Post Title</label>
+             <input type="email" class="form-control" id="postTitle" placeholder="name@example.com">
+         </div>
+
+
+         <div class="mb-3">
+             <label for="postText" class="form-label">Post Text</label>
+             <textarea class="form-control" id="postText" rows="3"></textarea>
+         </div>
+
+         <div class="mb-3">
+             <label for="postCategory" class="form-label">Post Category</label>
+             <input type="email" class="form-control" id="postCategory" placeholder="name@example.com">
+         </div>
+
+         <button type="button" class="btn btn-success" id="savePost">Save Post</button>
+         <button type="button" class="btn btn-warning" id="updatePost">Update Post</button>
+         <button type="button" class="btn btn-danger" id="deletePost">Delete Post</button>
+         <button type="button" class="btn btn-primary" id="getAll">Get All Post</button>
+
+
+
+     </section>
+
+
+     <section id="sec2" class="container mt-5">
+         <table class="table" >
+             <thead>
+             <tr>
+                 <th scope="col">ID</th>
+                 <th scope="col">Title</th>
+                 <th scope="col">Text</th>
+                 <th scope="col">Category</th>
+             </tr>
+             </thead>
+             <tbody id="table tbody">
+
+             </tbody>
+         </table>
+     </section>
+
+
+ </main>
+
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+<footer>
+
+</footer>
+</html>
